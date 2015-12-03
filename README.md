@@ -24,7 +24,7 @@ create mongodb instance from MongoLab as the link https://mongolab.com. You need
 * Click "Create new" button to create mongo database
 ![CreateNewMongoDB](/docs/CreateNewMongoDB.png)
 
-* Select "Single-node" > Sabdard Line as "Sandbox"
+* Select "Single-node" > Select Standard Line as "Sandbox"
 ![SelectPlan](/docs/SelectFreePlan.png)
 
 * Set database name and click "Create new MongoDB deployment"
