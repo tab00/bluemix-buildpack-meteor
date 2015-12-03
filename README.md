@@ -69,7 +69,7 @@ applications:
 
 * In testmeteor/.meteor folder, open the platforms file then remove the ios and android entries (if there exist)
 
-* Under testmeter, Run
+* Under testmeteor, Run
 
 ```
 cf push
