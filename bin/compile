@@ -52,12 +52,6 @@ curl -sS https://install.meteor.com/ | sh
 export PATH=$PATH:$HOME"/.meteor"
 
 #
-# Install app's dependencies.
-#
-status "Installing app's dependencies"
-npm install | indent
-
-#
 # Build Meteor application
 #
 status "Building Meteor application"
@@ -67,6 +61,8 @@ mv $TEMP_DIR"/bundle/"* $COMPILE_APP_DIR
 #
 # Install dependencies.
 #
+status "Installing app's dependencies"
+npm install | indent
 status "Installing dependencies"
 if [ -e $COMPILE_APP_DIR"/programs/server/package.json" ]; then
   cd $COMPILE_APP_DIR"/programs/server" && (npm install | indent)
